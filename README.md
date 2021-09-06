@@ -1,2 +1,3 @@
 # Animation-experiments
-Collections of animation experiments 
+This repository contains a collection of animation experiments. 
+
