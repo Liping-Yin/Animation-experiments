@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSAP Tutorials</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>GSAP Animations</h1>
+
+    <section id="container scroll-trigger">
+      <h2>Tweens</h2>
+      <div class="container">
+        <div class="box box--a">a</div>
+        <div class="box box--b">b</div>
+        <div class="box box--c">c</div>
+        <div class="box box--d">d</div>
+      </div>
+
+      <h2>Timeline</h2>
+      <div class="container timeline">
+        <div class="box box--t1">T1</div>
+        <div class="box box--t2">T2</div>
+        <div class="box box--t3">T3</div>
+      </div>
+
+      <h2>Special properties</h2>
+
+      <div class="container">
+        <h3>stagger</h3>
+        <div class="container stagger">
+          <div class="box box--s"></div>
+          <div class="box box--s"></div>
+          <div class="box box--s"></div>
+          <div class="box box--s"></div>
+        </div>
+
+        <div class="container output">
+          <h3>Callbacks</h3>
+          <div class="box box--e">E</div>
+        </div>
+
+        <div class="container motionPath">
+          <h3>Motion Path</h3>
+          <div class="container">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <rect
+                id="myRect"
+                width="100"
+                height="50"
+                fill="rgb(122,123,255)"
+              ></rect>
+              <text font-family="Verdana" font-size="12" fill="black">
+                SVG Rect
+              </text>
+
+              <path id="myPath" d="M9,100c0,0,18-41,49-65" />
+            </svg>
+
+            <div class="box box--p">Me!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
